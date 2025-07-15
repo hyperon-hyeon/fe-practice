@@ -1,0 +1,19 @@
+#post-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.item{
+    gap: 100px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.title{
+  display: block;       /* 블록 요소로 만들어서 */
+  white-space: normal;  /* 줄바꿈 허용 */
+  word-break: break-word; /* 단어 중간에서도 줄바꿈 가능 */
+  max-width:400px;
+}
