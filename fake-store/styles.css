@@ -1,3 +1,28 @@
+
+
+header{
+    color:rgb(135, 0, 0);
+    font-size: xx-large;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    color:grey;
+}
 #post-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
