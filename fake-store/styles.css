@@ -1,9 +1,8 @@
-
-
 header{
     color:rgb(135, 0, 0);
     font-size: xx-large;
-    height: 900px;
+    height: 100vh;
+    width:1492px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,22 +22,66 @@ footer{
     justify-content: center;
     color:grey;
 }
+
 #post-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .item{
-    gap: 100px;
-    
+    margin-top:100px;
+    height: 450px;
+    width: 400px;
+    list-style: none;
 }
+.item-info{
+    display: flex;
+    font-size:18px;
+    justify-content: center;
+    margin-bottom: 30px;
 
-.hidden{
-    display: none;
 }
-
 .title{
   display: block;       /* 블록 요소로 만들어서 */
   white-space: normal;  /* 줄바꿈 허용 */
   word-break: break-word; /* 단어 중간에서도 줄바꿈 가능 */
-  max-width:400px;
+  max-width:250px;
+}
+.item-img {
+  position: relative;
+  height: 300px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  justify-content: center;
+}
+
+.item-caption {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  overflow: auto;
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.item-img:hover .item-caption {
+  opacity: 1;
 }
